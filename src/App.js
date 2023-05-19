@@ -134,7 +134,7 @@ function App() {
       fetchBalances();
       showNotification("Round Started!");
     } catch (error) {
-      showNotification("Error:", error);
+      showNotification("Round Already Started!");
     }
   };
 
