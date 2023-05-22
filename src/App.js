@@ -128,8 +128,8 @@ function App() {
   const createRewardPool = async () => {
     if (!contract) return;
     try {
-      const amount = ethers.utils.parseUnits("100", 18);
-      const tx = await contract.createRewardPool(amount);
+      
+      const tx = await contract.createRewardPool();
       await tx.wait();
       fetchBalances();
       showNotification("Round Started!");
